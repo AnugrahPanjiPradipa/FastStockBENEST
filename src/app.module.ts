@@ -6,6 +6,7 @@ import { GeraiModule } from './modules/gerai/gerai.module';
 import { LogModule } from './modules/log/log.module';
 import { ItemModule } from './modules/item/item.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -25,5 +26,6 @@ import { AuthModule } from './modules/auth/auth.module';
     ItemModule,
     AuthModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}
